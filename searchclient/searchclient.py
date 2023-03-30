@@ -16,7 +16,6 @@ import memory
 import re
 import sys
 from agent_types.classic import classic_agent_type
-from agent_types.serial import serial_agent_type
 from agent_types.decentralised import decentralised_agent_type
 from agent_types.helper import helper_agent_type
 from agent_types.non_deterministic import non_deterministic_agent_type
