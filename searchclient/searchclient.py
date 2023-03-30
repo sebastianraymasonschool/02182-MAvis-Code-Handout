@@ -82,8 +82,6 @@ def parse_command_line_arguments():
     agent_type_group = parser.add_mutually_exclusive_group()
     agent_type_group.add_argument('-classic', action='store_const', dest='agent_type', const='classic',
                                   help='Use a classic centralized agent type.')
-    agent_type_group.add_argument('-serial', action='store_const', dest='agent_type', const='serial',
-                                  help='Use a serial centralized agent type.')
     agent_type_group.add_argument('-decentralised', action='store_const', dest='agent_type', const='decentralised',
                                   help='Use a decentralised agent type.')
     agent_type_group.add_argument('-helper', action='store_const', dest='agent_type', const='helper',
@@ -143,8 +141,6 @@ if __name__ == '__main__':
         # Construct the requested action library
         if action_library_name == 'default':
             action_library = DEFAULT_HOSPITAL_ACTION_LIBRARY
-        elif action_library_name == 'sticky':
-            action_library = STICKY_HOSPITAL_ACTION_LIBRARY
 
         # Construct the requested heuristic
         if heuristic_name == 'goalcount':
@@ -181,8 +177,6 @@ if __name__ == '__main__':
     # Run the requested agent type
     if agent_type_name == 'classic':
         classic_agent_type(level, initial_state, action_library, goal_description, frontier)
-    elif agent_type_name == 'serial':
-        serial_agent_type(level, initial_state, action_library, goal_description, frontier)
     elif agent_type_name == 'decentralised':
         decentralised_agent_type(level, initial_state, action_library, goal_description, frontier)
     elif agent_type_name == 'helper':
