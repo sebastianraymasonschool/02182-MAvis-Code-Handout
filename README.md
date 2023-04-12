@@ -47,6 +47,7 @@ The folder 'agent_types' contains multiple different type of agents which can be
 - 'decentralised' - A planning agent using DECENTRALISED-AGENTS. Select by adding "-decentralised" to the command line.
 - 'helper' - A planning agent using the helper agent algorithm. Select by adding "-helper" to the command line.
 - 'non_deterministic' - A planning agent using AND-OR-GRAPH-SEACH with a broken executor. Select by adding "-nondeterministic" to the command line.
+- 'robot' - A planning agent using the robot agent that controls the physical robots. Select by adding "-robot <'IP'>" to the command line.
 
 ## Debugging
 
@@ -83,3 +84,7 @@ $ java -Dsun.java2d.opengl=true -jar server.jar -g -s 300 -t 180 -c "python sear
 ```
 
 See http://docs.oracle.com/javase/8/docs/technotes/guides/2d/flags.html for more information.
+
+### Router Connection Information for robots 
+Name:     **Pepper**  
+Password: **60169283**

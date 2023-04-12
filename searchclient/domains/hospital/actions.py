@@ -124,5 +124,17 @@ DEFAULT_HOSPITAL_ACTION_LIBRARY = [
     # Add Push and Pull actions here
 ]
 
+# An action library for the actions
+ROBOT_ACTION_LIBRARY = [
+    #PushAction("N", "N"),
+    #PushAction("E", "E"),
+    #PushAction("S", "S"),
+    #PushAction("W", "W"),
+    MoveAction("S"),
+    MoveAction("N"),
+    MoveAction("E"),
+    MoveAction("W"),
+    NoOpAction()
+]
 
 
